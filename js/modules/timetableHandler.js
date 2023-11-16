@@ -27,57 +27,66 @@ export function updateSelectedClass(selectedClass) {
 
 // TODO: Make this read from the actual json file
 function AddHTML(timetable) {
-    // run this for every entry (lesson) in timetable
 
-    const lesson = document.createElement("div");
-    lesson.classList.add('row', 'justify-content-start', 'rounded', 'm-1', 'py-2', 'align-items-center', 'lesson')
+    // Extract the "C_IT23-3 A" object and get the number of entries in it
+    var cItObject = timetable["C_IT23-3 A"];
+    var numberOfEntries = Object.keys(cItObject).length;
+
+    for (let i = 0; i < numberOfEntries; i++) {
+        console.log("in for loop")
+
+        const lesson = document.createElement("div");
+        lesson.classList.add('row', 'justify-content-start', 'rounded', 'm-1', 'py-2', 'align-items-center', 'lesson')
+        
+        // create start & end time col
+        const col1 = document.createElement("div");
+        col1.classList.add("col-auto");
+
+        const startTime = document.createElement("p");
+        startTime.classList.add("lesson-start-time", "m-0");
+        startTime.textContent = "xx:xx";
+        col1.appendChild(startTime);
+
+        const endTime = document.createElement("p");
+        endTime.classList.add("lesson-end-time", "m-0");
+        endTime.textContent = "xx:xx";
+        col1.appendChild(endTime);
+
+        lesson.appendChild(col1);
+
+
+        // Create topic and metadata col
+        const col2 = document.createElement("div");
+        col2.classList.add("col");
+
+        const title = document.createElement("h4");
+        title.textContent = "Placeholder";
+        col2.appendChild(title);
+
+        const metadata = document.createElement("p");
+        metadata.classList.add("m-0");
+        metadata.textContent = "Room: xxx | Teacher: xxx";
+        col2.appendChild(metadata);
+
+        lesson.appendChild(col2);
+
+
+        // create info icon (if required)
+        const col3 = document.createElement("div");
+        col3.classList.add("col-auto");
+
+        const infoIcon = document.createElement("p");
+        infoIcon.classList.add("m-0");
+        infoIcon.textContent = "Icon tba";
+        col3.appendChild(infoIcon);
+
+        lesson.appendChild(col3);
+        
+
+        // get the location and add it
+        const parentDiv = document.querySelector(".lesson-wrapper");
+        parentDiv.appendChild(lesson);
+    }
+
     
-    // create start & end time col
-    const col1 = document.createElement("div");
-    col1.classList.add("col-auto");
-
-    const startTime = document.createElement("p");
-    startTime.classList.add("lesson-start-time", "m-0");
-    startTime.textContent = "xx:xx";
-    col1.appendChild(startTime);
-
-    const endTime = document.createElement("p");
-    endTime.classList.add("lesson-end-time", "m-0");
-    endTime.textContent = "xx:xx";
-    col1.appendChild(endTime);
-
-    lesson.appendChild(col1);
-
-
-    // Create topic and metadata col
-    const col2 = document.createElement("div");
-    col2.classList.add("col");
-
-    const title = document.createElement("h4");
-    title.textContent = "Placeholder";
-    col2.appendChild(title);
-
-    const metadata = document.createElement("p");
-    metadata.classList.add("m-0");
-    metadata.textContent = "Room: xxx | Teacher: xxx";
-    col2.appendChild(metadata);
-
-    lesson.appendChild(col2);
-
-
-    // create info icon (if required)
-    const col3 = document.createElement("div");
-    col3.classList.add("col-auto");
-
-    const infoIcon = document.createElement("p");
-    infoIcon.classList.add("m-0");
-    infoIcon.textContent = "Icon tba";
-    col3.appendChild(infoIcon);
-
-    lesson.appendChild(col3);
-    
-
-    // get the location and add it
-    const parentDiv = document.querySelector(".lesson-wrapper");
-    parentDiv.appendChild(lesson);
 }
