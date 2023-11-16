@@ -33,8 +33,6 @@ function AddHTML(timetable) {
     var numberOfEntries = Object.keys(cItObject).length;
 
     for (let i = 0; i < numberOfEntries; i++) {
-        console.log("in for loop")
-
         const lesson = document.createElement("div");
         lesson.classList.add('row', 'justify-content-start', 'rounded', 'm-1', 'py-2', 'align-items-center', 'lesson')
         

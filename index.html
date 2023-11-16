@@ -22,7 +22,7 @@
             <!-- Dropdown for available classes -->
             <!-- TODO: Update this to get the available options from what's in the folder "timetables" -->
             <div class="col-auto">
-                <select class="form-select form-select mb-3 select-class" aria-label="Dropdown class selector">
+                <select class="form-select form-select mb-3 select-timetable" aria-label="Dropdown class selector">
                     <option selected>Select your class</option>
                     <option value="it-23-3-A">C_IT 23/3 A</option>
                     <option value="it-23-3-B">C_IT 23/3 B</option>
@@ -37,13 +37,13 @@
         <!-- Day of week, left & right buttons to go back / forward -->
         <div class="row d-flex justify-content-between mt-3">
             <div class="col-auto">
-                <button type="button" class="btn btn-primary"> Prev </button>
+                <button type="button" class="btn btn-primary prev-day"> Prev </button>
             </div>
             <div class="col-auto">
-                <h2>Monday</h2>
+                <h2 class="weekday"> </h2>
             </div>
             <div class="col-auto">
-                <button type="button" class="btn btn-primary"> Next </button>
+                <button type="button" class="btn btn-primary next-day"> Next </button>
             </div>
         </div>
 

@@ -1,63 +1,61 @@
-{ "C_IT23-3 A" : {
-
-    "Monday" : {
-        "lesson1" : {
-            "start-time" : "07:15",
-            "end-time" : "08:45",
-            "topic" : "IT-LF 1",
-            "teacher" : "Thierbach",
-            "room" : "B403"
-        },
-        "lesson2" : {
-            "start-time" : "09:15",
-            "end-time" : "10:45",
-            "topic" : "IT-LF 2",
-            "teacher" : "Arndt",
-            "room" : "B310"
-        },
-        "lesson3" : {
-            "start-time" : "11:00",
-            "end-time" : "12:30",
-            "topic" : "ENG",
-            "teacher" : "Pohle",
-            "room" : "B406"
-        },
-        "lesson4" : {
-            "start-time" : "13:10",
-            "end-time" : "14:40",
-            "topic" : "SP",
-            "teacher" : "Reinhold",
-            "room" : "A500"
-        }
+{ "0" : {
+    "lesson1" : {
+        "start-time" : "07:15",
+        "end-time" : "08:45",
+        "topic" : "IT-LF 1",
+        "teacher" : "Thierbach",
+        "room" : "B403"
     },
-
-    "Tuesday" : {
-        "lesson1" : {
-            "start-time" : "07:15",
-            "end-time" : "08:45",
-            "topic" : "IT-LF 2",
-            "teacher" : "Kiel",
-            "room" : "B303"
-        },
-        "lesson2" : {
-            "start-time" : "09:15",
-            "end-time" : "10:45",
-            "topic" : "ENG",
-            "teacher" : "Pohle",
-            "room" : "B406"
-        },
-        "lesson3" : {
-            "start-time" : "11:00",
-            "end-time" : "12:30",
-            "topic" : "IT-LF 5",
-            "teacher" : "Bardon",
-            "room" : "B409"
-        }
+    "lesson2" : {
+        "start-time" : "09:15",
+        "end-time" : "10:45",
+        "topic" : "IT-LF 2",
+        "teacher" : "Arndt",
+        "room" : "B310"
     },
+    "lesson3" : {
+        "start-time" : "11:00",
+        "end-time" : "12:30",
+        "topic" : "ENG",
+        "teacher" : "Pohle",
+        "room" : "B406"
+    },
+    "lesson4" : {
+        "start-time" : "13:10",
+        "end-time" : "14:40",
+        "topic" : "SP",
+        "teacher" : "Reinhold",
+        "room" : "A500"
+    }
+},
 
-    "Wednesday" : {},
+"1" : {
+    "lesson1" : {
+        "start-time" : "07:15",
+        "end-time" : "08:45",
+        "topic" : "IT-LF 2",
+        "teacher" : "Kiel",
+        "room" : "B303"
+    },
+    "lesson2" : {
+        "start-time" : "09:15",
+        "end-time" : "10:45",
+        "topic" : "ENG",
+        "teacher" : "Pohle",
+        "room" : "B406"
+    },
+    "lesson3" : {
+        "start-time" : "11:00",
+        "end-time" : "12:30",
+        "topic" : "IT-LF 5",
+        "teacher" : "Bardon",
+        "room" : "B409"
+    }
+},
 
-    "Thursday" : {},
+"2" : {},
 
-    "Friday" : {}
-}}
+"3" : {},
+
+"4" : {}
+}
