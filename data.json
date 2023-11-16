@@ -1,0 +1,168 @@
+{
+  "C_IT23-3 A": {
+    "Monday": {
+      "lesson1": {
+        "start-time": "07:15",
+        "end-time": "08:45",
+        "topic": "IT-LF1",
+        "teacher": "Thierbach",
+        "room": "B403"
+      },
+      "lesson2": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "IT-LF2 a",
+        "teacher": "Arndt",
+        "room": "B310"
+      },
+      "lesson3": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "IT-LF5 b",
+        "teacher": "Bardon",
+        "room": "B312"
+      },
+      "lesson4": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "ENG",
+        "teacher": "Pohle",
+        "room": "B406"
+      },
+      "lesson5": {
+        "start-time": "13:10",
+        "end-time": "14:40",
+        "topic": "SP",
+        "teacher": "Reinhold",
+        "room": "A500"
+      }
+    },
+    "Tuesday": {
+      "lesson1": {
+        "start-time": "07:15",
+        "end-time": "08:45",
+        "topic": "IT-LF2",
+        "teacher": "Kiel",
+        "room": "B303"
+      },
+      "lesson2": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "ENG",
+        "teacher": "Pohle",
+        "room": "B406"
+      },
+      "lesson3": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF3 b",
+        "teacher": "Poppe",
+        "room": "B411"
+      },
+      "lesson4": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF5 a",
+        "teacher": "Bardon",
+        "room": "B409"
+      }
+    },
+    "Wednesday": {
+      "lesson1": {
+        "start-time": "07:15",
+        "end-time": "08:45",
+        "topic": "IT-LF3",
+        "teacher": "Hempel",
+        "room": "B403"
+      },
+      "lesson2": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "IT-LF2 b",
+        "teacher": "Arndt",
+        "room": "B310"
+      },
+      "lesson3": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "IT-LF5 a",
+        "teacher": "Münch",
+        "room": "A303"
+      },
+      "lesson4": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF3 a",
+        "teacher": "Poppe",
+        "room": "B411"
+      },
+      "lesson5": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF5 b",
+        "teacher": "Münch",
+        "room": "A303"
+      },
+      "lesson6": {
+        "start-time": "13:10",
+        "end-time": "14:40",
+        "topic": "DEU",
+        "teacher": "Zürpel",
+        "room": "B204, B103"
+      }
+    },
+    "Thursday": {
+      "lesson1": {
+        "start-time": "07:15",
+        "end-time": "08:45",
+        "topic": "IT-LF2",
+        "teacher": "Kiel",
+        "room": "B303"
+      },
+      "lesson2": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "WI",
+        "teacher": "Kiel",
+        "room": "B408"
+      },
+      "lesson3": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF5",
+        "teacher": "Bardon",
+        "room": "B303"
+      },
+      "lesson4": {
+        "start-time": "13:10",
+        "end-time": "14:40",
+        "topic": "DEU",
+        "teacher": "Zürpel",
+        "room": "B111, B403"
+      }
+    },
+    "Friday": {
+      "lesson1": {
+        "start-time": "07:15",
+        "end-time": "08:45",
+        "topic": "IT-LF1",
+        "teacher": "Thierbach",
+        "room": "B403"
+      },
+      "lesson2": {
+        "start-time": "09:15",
+        "end-time": "10:45",
+        "topic": "GK",
+        "teacher": "Fernitz",
+        "room": "B208"
+      },
+      "lesson3": {
+        "start-time": "11:00",
+        "end-time": "12:30",
+        "topic": "IT-LF4",
+        "teacher": "Wittkopf",
+        "room": "B303"
+      }
+    }
+  }
+}
