@@ -1,38 +1,60 @@
 // Created 2023-11-15
 
 // Import modules
-import * as timetableHandler from './modules/timetableHandler.js';
+import * as renderHTML from './modules/htmlHandler.js';
 import * as jsonHandler from './modules/jsonHandler.js';
+import * as dateHandler from './modules/dateHandler.js'
 
 
-// Select DOM elements
+// SELECT DOM ELEMENTS
 const timetableSelected = document.querySelector(".select-timetable")
-const nextDay = document.querySelector(".prev-day")
-const prevDay = document.querySelector(".next-day")
+const nextDay = document.querySelector(".next-day")
+const prevDay = document.querySelector(".prev-day")
 
-// Add event listeners
+// ADD EVENT LISTENERS
 timetableSelected.addEventListener("change", onTimetableSelected);
 nextDay.addEventListener("click", loadNextDay)
 prevDay.addEventListener("click", loadPrevDay)
 
-
+// GLOBAL VARIABLES
+var selectedWeekdayNumeric = dateHandler.getWeekDay();
+var timetable;
 
 
 function onTimetableSelected() {
-    // parse JSON, load correct timetable
-    const timetable = jsonHandler.loadJSON(timetableSelected)
+    // Parse JSON, load selected timetable
+    timetable = jsonHandler.loadJSON(timetableSelected)
 
-    // erase data that might be present
-    // get array with weekdays
-    // get array with full data
-    // get current day
-    
+    updateTimetable();
 }
 
+function updateTimetable() {
+    // Render human readable weekday name
+    renderHTML.renderWeekday(dateHandler.getReadableWeekday(selectedWeekdayNumeric))
+
+    // Render HTML for given weekday
+    renderHTML.renderLessonHTML(timetable[selectedWeekdayNumeric])
+}
+
+
+// Update selectedDay & then the HTML files
 function loadNextDay() {
-    console.log('next day')
+    if (selectedWeekdayNumeric == 6) {
+        selectedWeekdayNumeric = 0;
+    } else {
+        selectedWeekdayNumeric += 1;
+    }
+
+    updateTimetable();
 }
+
 
 function loadPrevDay() {
-    console.log('prev day')
+    if (selectedWeekdayNumeric == 0) {
+        selectedWeekdayNumeric = 6;
+    } else {
+        selectedWeekdayNumeric -= 1;
+    }
+
+    updateTimetable();
 }
