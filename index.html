@@ -13,18 +13,19 @@
     
 
     <!-- Nav -->
-    <nav class="navbar bg-body-secondary">
+    <nav class="navbar bg-body-secondary py-3">
         <div class="container-fluid">
             <div class="col-auto">
                 <a class="navbar-brand" href="#">SmartPlan</a>
             </div>
             
             <!-- Dropdown for available classes -->
+            <!-- TODO: Update this to get the available options from what's in the folder "timetables" -->
             <div class="col-auto">
-                <select class="form-select form-select mb-3" aria-label="Dropdown class selector">
-                    <option selected>Select your class</option>
-                    <option value="1">C_IT 23/3</option>
-                    <option value="2">C_IT 23/6</option>
+                <select class="form-select form-select select-timetable" aria-label="Dropdown class selector">
+                    <option selected disabled>Select your class</option>
+                    <option value="it-23-3-A">C_IT 23/3 A</option>
+                    <option value="it-23-3-B">C_IT 23/3 B</option>
                 </select>
             </div>
             
@@ -32,42 +33,33 @@
     </nav>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid px-4">
         <!-- Day of week, left & right buttons to go back / forward -->
-        <div class="row d-flex justify-content-between mt-3">
-            <div class="col-auto">
-                <button type="button" class="btn btn-primary"> Prev </button>
+        <div class="row justify-content-between mt-3">
+            <div class="col-auto p-0">
+                <button type="button" class="btn btn-primary prev-day"> Prev </button>
             </div>
             <div class="col-auto">
-                <h2>Monday</h2>
+                <h2 class="weekday"> Welcome! </h2>
             </div>
-            <div class="col-auto">
-                <button type="button" class="btn btn-primary"> Next </button>
+            <div class="col-auto p-0">
+                <button type="button" class="btn btn-primary next-day"> Next </button>
             </div>
         </div>
 
         <!-- Block with the data for that day, iterate over entries for the given weekday, add as many lessons as there are -->
-        <div class="row justify-content-start rounded mt-3 mx-1 py-2 align-items-center lesson">
-            <div class="col-auto">
-                <p class="lesson-start-time m-0">07:15</p>
-                <p class="lesson-end-time m-0">08:45</p>
-            </div>
-
-            <div class="col">
-                <h4>IT-LF 2</h4>
-                <p class="m-0">Room: B303 | Teacher: Kiel</p>
-            </div>
-
-            <div class="col-auto">
-                <!-- Show icon if something has changed on this lesson -->
-                Info Icon
+        <div class="lesson-wrapper mt-3">
+            <div class="lessons">
+                <!-- JS generated lesson content will replace the following div -->
+                <div class="row justify-content-center align-items-center"> 
+                    Select a timetable from the top right to continue.
+                </div>
             </div>
         </div>
 
-
     </div>
     
-    <script src="js/script.js"></script>
+    <script type="module" src="js/app.js"></script>
     <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
