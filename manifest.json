@@ -1,0 +1,17 @@
+{
+  "name": "SMART PLAN",
+  "description": "ORGANIZING WITH EASE",
+  "start_url": "/",
+  "lang": "de-DE",
+  "theme_color": "#e8ecef",
+  "display": "standalone",
+  "background_color": "#e8ecef",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "smartplan.png",
+      "sizes": "1831x1831",
+      "type": "image/png"
+    }
+  ]
+}
