@@ -6,22 +6,22 @@
 /* ################ (bad) darkmode from @etsde ################ */
 @media (prefers-color-scheme: dark) {
 
-    * {
-        background-color:               #121212;
-        --bs-body-color:                #121212;
-        --bs-body-bg:                   var(--bs-black-rgb);
-        --bs-secondary-bg-rgb:          var(--bs-black-rgb);
-        --bs-navbar-brand-color:        var(--bs-white-rgb);
-        --bs-navbar-brand-hover-color:  var(--bs-white-rgb);
-    }
+     * {
+         background-color:               black;
+         --bs-body-color:                #e9ecef;
+         --bs-body-bg:                   var(--bs-black-rgb);
+         --bs-secondary-bg-rgb:          var(--bs-black-rgb);
+         --bs-navbar-brand-color:        var(--bs-white-rgb);
+         --bs-navbar-brand-hover-color:  var(--bs-white-rgb);
+     }
 
-    select.form-select {
-        border:                         1px rgb(60, 60, 60) solid;
-    }
+     select.form-select {
+         border:                         1px rgb(60, 60, 60) solid;
+     }
 
-    .lesson {
-        background-color:               var(--bs-black-rgb);
-        border:                         1px solid rgb(45, 45, 45);
-        color:                          #e9ecef;
-    }
+     .lesson {
+         background-color:               var(--bs-black-rgb);
+         border:                         1px solid rgb(45, 45, 45);
+         color:                          #e9ecef;
+     }
 }
