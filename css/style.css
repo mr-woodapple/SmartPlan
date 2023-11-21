@@ -2,3 +2,37 @@
 .lesson {
     background-color: #e9ecef;
 }
+
+/* ################ (bad) darkmode from @etsde ################ */
+@media (prefers-color-scheme: dark) {
+
+    * {
+        background-color:               #2d2d2d;
+        --bs-body-color:                #e9ecef;
+        --bs-body-bg:                   var(--bs-black-rgb);
+        --bs-secondary-bg-rgb:          var(--bs-black-rgb);
+        --bs-navbar-brand-color:        var(--bs-white-rgb);
+        --bs-navbar-brand-hover-color:  var(--bs-white-rgb);
+    }
+
+    .container-fluid, .col-auto, .navbar-brand {
+        background-color: var(--bs-black-rgb);
+    } 
+
+    .col-auto {
+        align-items: center;
+    }
+    select.form-select {
+        border:                         1px rgb(60, 60, 60) solid;
+    }
+
+    .lesson {
+        background-color:               var(--bs-black-rgb);
+        border:                         1px solid #515151;
+        color:                          #e9ecef;
+    }
+}
+
+#nav {
+    color: #2d2d2d;
+}
