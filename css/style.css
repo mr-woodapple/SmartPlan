@@ -8,7 +8,7 @@
 
     * {
         background-color:               #121212;
-        --bs-body-color:                #e9ecef;
+        --bs-body-color:                #121212;
         --bs-body-bg:                   var(--bs-black-rgb);
         --bs-secondary-bg-rgb:          var(--bs-black-rgb);
         --bs-navbar-brand-color:        var(--bs-white-rgb);
