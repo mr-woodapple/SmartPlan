@@ -3,28 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
-    
-    <!-- Bootstrap CSS-->
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="apple-touch-icon" sizes="1831x1831" href="/smartplan.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/smartplan.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/fsmartplan.png">
-    <meta name="msapplication-TileColor" content="#e8ecef">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="SMART PLAN">
-    <meta name="apple-mobile-web-app-title" content="SMART PLAN">
-    <meta name="theme-color" content="#e8ecef">
-    <meta name="msapplication-navbutton-color" content="#e8ecef">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="1831x1831" href="img/smartplan.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/smartplan.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/smartplan.png">
 
     <!-- Primary Meta Tags -->
     <title>SMART PLAN - BSZET</title>
     <meta name="title" content="SMART PLAN - BSZET" />
     <meta name="description" content="ORGANIZING WITH EASE" />
+    <meta name="msapplication-TileColor" content="#e8ecef">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="SMART PLAN">
+    <meta name="apple-mobile-web-app-title" content="SMART PLAN">
+    <meta name="msapplication-navbutton-color" content="#e8ecef">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            font-size: 70%;
+        }
+
+        footer a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+            /* also all:unset; possible but not sure if it works on old browsers */
+        }
+
+        
+    </style>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -39,15 +64,15 @@
     <meta property="twitter:title" content="SMART PLAN - BSZET" />
     <meta property="twitter:description" content="ORGANIZING WITH EASE" />
     <meta property="twitter:image" itemprop="image" content="/sp.jpg" />
+
 </head>
 <body>
-    
 
     <!-- Nav -->
     <nav class="navbar bg-body-secondary py-3">
         <div class="container-fluid">
             <div class="col-auto d-flex ">
-                <img src="/smartplan-logo.svg" width="15px" alt="">
+                <img src="img/smartplan-logo.svg" width="15px" alt="">
                 <a class="navbar-brand" href="#">&nbsp;SmartPlan</a>
             </div>
             
@@ -66,6 +91,7 @@
 
 
     <div class="container-fluid px-4">
+
         <!-- Day of week, left & right buttons to go back / forward -->
         <div class="row justify-content-between mt-3">
             <div class="col-auto p-0">
@@ -90,7 +116,20 @@
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 mt-auto">
+        <div class="container">
+            <hr class="vertical-line">
+            <p>&copy; 2023 bszet.me<br> All rights reserved.<br>
+                <a href='/CHANGELOG.md' class="footer">Changelog</a>
+                <span>|</span>
+                <a href='https://youtu.be/xvFZjo5PgG0?si=dLyMSXAD7srWbOw8' class="footer">GitHub</a>
+            </p>
+        </div>
+    </footer>
     
+
     <script type="module" src="js/app.js"></script>
     <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
