@@ -8,6 +8,7 @@
 
     * {
         background-color:               #121212;
+        color:                          #121212;
         --bs-body-color:                #121212;
         --bs-body-bg:                   var(--bs-black-rgb);
         --bs-secondary-bg-rgb:          var(--bs-black-rgb);
