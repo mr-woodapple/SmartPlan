@@ -4,6 +4,7 @@
 import * as renderHTML from './modules/htmlHandler.js';
 import * as jsonHandler from './modules/jsonHandler.js';
 import * as dateHandler from './modules/dateHandler.js'
+import { sniffData } from './modules/dataSniffer.js';
 
 
 // SELECT DOM ELEMENTS
@@ -12,6 +13,7 @@ const nextDay = document.querySelector(".next-day")
 const prevDay = document.querySelector(".prev-day")
 
 // ADD EVENT LISTENERS
+document.addEventListener("DOMContentLoaded", init);
 timetableSelected.addEventListener("change", onTimetableSelected);
 nextDay.addEventListener("click", loadNextDay)
 prevDay.addEventListener("click", loadPrevDay)
@@ -21,6 +23,17 @@ var selectedWeekdayNumeric = dateHandler.getWeekDay();
 var timetable;
 
 
+// called after the DOM has loaded
+function init() {
+    getLiveData();
+}
+
+function getLiveData() {
+    const data = sniffData();
+}
+
+
+// Defines what happens when a timetable is selected
 function onTimetableSelected() {
     // Parse JSON, load selected timetable
     timetable = jsonHandler.loadJSON(timetableSelected)
@@ -28,6 +41,7 @@ function onTimetableSelected() {
     updateTimetable();
 }
 
+// Renders HTML for both the weekday & the lessons for that day
 function updateTimetable() {
     // Render human readable weekday name
     renderHTML.renderWeekday(dateHandler.getReadableWeekday(selectedWeekdayNumeric))
