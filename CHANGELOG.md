@@ -1,3 +1,11 @@
+23/11/23
+    - better code quality
+    - new folder structure
+    - new footer text
+
+22/11/23
+    - small bug fixes
+
 21/11/23
     - Dark mode implementation
     - Adding the logo next to the title
