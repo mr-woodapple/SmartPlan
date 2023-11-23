@@ -41,17 +41,6 @@
     font-family: 'stolzl-book';
 }
 
-/*  Would not use differnet font styles, book only in different sizes is enough in my opinion. 
-    The following just does not look good.
-
-.weekday {
-    font-family: 'stolzl-bold';
-}
-*/
-
-
-
-
 @media (prefers-color-scheme: dark) {
 
     * {
