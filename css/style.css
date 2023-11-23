@@ -4,6 +4,43 @@
 }
 
 /* ################ (bad) darkmode from @etsde ################ */
+
+@font-face {
+    font-family: 'stolzl-bold';
+    src: url('/font/stolzl.bold.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'stolzl-book';
+    src: url('/font/stolzl.book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'stolzl-light';
+    src: url('/font/stolzl.light.ttf') format('truetype');
+}
+
+/* TODO: WOFF files - uncomment and add when available
+@font-face {
+    font-family: 'stolzl-bold';
+    src: url('/font/stolzl.bold.woff') format('woff'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 
+}
+
+@font-face {
+    font-family: 'stolzl-book';
+    src: url('/font/stolzl.book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'stolzl-light';
+    src: url('/font/stolzl.light.woff') format('woff');
+}
+*/
+
+* {
+    font-family: 'stolzl-book';
+}
+
 @media (prefers-color-scheme: dark) {
 
     * {
@@ -13,6 +50,7 @@
         --bs-secondary-bg-rgb:          var(--bs-black-rgb);
         --bs-navbar-brand-color:        var(--bs-white-rgb);
         --bs-navbar-brand-hover-color:  var(--bs-white-rgb);
+
     }
 
     .container-fluid, .col-auto, .navbar-brand {
@@ -35,4 +73,24 @@
 
 #nav {
     color: #2d2d2d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    font-size: 70%;
+}
+
+footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
