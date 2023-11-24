@@ -1,5 +1,8 @@
-
 /* ################ General stuff ################ */
+* {
+    font-family: 'stolzl-book';
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -21,51 +24,73 @@ main {
     background: none;
 }
 
-
 /* ################ Lesson component ################ */
 .lesson {
     background-color: #e9ecef;
 }
 
+/* ################ Footer ################ */
+footer {
+    font-size: 70%;
+    font-family: 'stolzl-light';
+}
+
+footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ################ Cat Gif ################ */
+.rounded-box img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.rounded-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ################ Import Font ################ */
+@font-face {
+    font-family: 'stolzl-bold';
+    src: url('/font/Stolzl-Bold.ttf') format('truetype');
+    src: url('/font/Stolzl-Bold.woff') format('woff');
+    src: url('/font/Stolzl-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-book';
+    src: url('/font/Stolzl-Book.ttf') format('truetype');
+    src: url('/font/Stolzl-Book.woff') format('woff');
+    src: url('/font/Stolzl-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-light';
+    src: url('/font/Stolzl-Light.ttf') format('truetype');
+    src: url('/font/Stolzl-Light.woff') format('woff');
+    src: url('/font/Stolzl-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-medium';
+    src: url('/font/Stolzl-Medium.ttf') format('truetype');
+    src: url('/font/Stolzl-Medium.woff') format('woff');
+    src: url('/font/Stolzl-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-regular';
+    src: url('/font/Stolzl-Regular.ttf') format('truetype');
+    src: url('/font/Stolzl-Regular.woff') format('woff');
+    src: url('/font/Stolzl-Regular.woff2') format('woff2');
+}
+
 
 /* ################ (bad) darkmode from @etsde ################ */
-
-@font-face {
-    font-family: 'stolzl-bold';
-    src: url('/font/stolzl.bold.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-    font-family: 'stolzl-book';
-    src: url('/font/stolzl.book.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'stolzl-light';
-    src: url('/font/stolzl.light.ttf') format('truetype');
-}
-
-/* TODO: WOFF files - uncomment and add when available
-@font-face {
-    font-family: 'stolzl-bold';
-    src: url('/font/stolzl.bold.woff') format('woff'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 
-}
-
-@font-face {
-    font-family: 'stolzl-book';
-    src: url('/font/stolzl.book.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'stolzl-light';
-    src: url('/font/stolzl.light.woff') format('woff');
-}
-*/
-
-* {
-    font-family: 'stolzl-book';
-}
-
 @media (prefers-color-scheme: dark) {
 
     * {
@@ -95,14 +120,6 @@ main {
         color:                          #e9ecef;
     }
 }
+/* ################ DARKMODE END ################ */
 
 
-/* ################ Footer ################ */
-footer {
-    font-size: 70%;
-}
-
-footer a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
