@@ -1,7 +1,32 @@
+
+/* ################ General stuff ################ */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* ################ Navbar ################ */
+#nav {
+    color: #2d2d2d;
+}
+
+.navbar-brand #img {
+    background: none;
+}
+
+
 /* ################ Lesson component ################ */
 .lesson {
     background-color: #e9ecef;
 }
+
 
 /* ################ (bad) darkmode from @etsde ################ */
 
@@ -71,21 +96,8 @@
     }
 }
 
-#nav {
-    color: #2d2d2d;
-}
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-main {
-    flex: 1;
-}
-
+/* ################ Footer ################ */
 footer {
     font-size: 70%;
 }
