@@ -5,7 +5,8 @@ const app = express();
 const path = require('path');
 const http = require('http');
 const axios = require('axios');
-
+const pdf = require('pdf-parse');
+var fs = require('fs');
 
 
 //register public dir to serve static files (html, css, js)
@@ -24,32 +25,59 @@ app.use( express.static( path.join(__dirname, "public") ) );
 /******************************* GET CALLS ******************************/
 // returns all items
 app.get('/getData', function(req, res) {
-	res.send("test");
+    const url = 'http://geschuetzt.bszet.de/s-lk-vw/Vertretungsplaene/vertretungsplan-bs-it.pdf';
+    const username = 'bsz-et-2324';
+    const password = 'schulleiter#23';
+    fetchPDF(url, username, password)
+        .then(pdfData => parsePDF(pdfData))
+        .then(data => {
+            // Now you have your parsed data.
+            // data.text is the content of the pdf
+            console.log(data.text);
+            
+            const jsonString = JSON.stringify(data.text)
+            fs.writeFile('generatedData/SubstitutionPlan.json', jsonString, err => {
+                if (err) {
+                    console.log('Error writing file', err)
+                } else {
+                    console.log('Successfully wrote file')
+                }
+            })
+        })
+        .catch(error => console.error(error));
+	
+    //    res.send("test");
 });
 
 
+async function fetchPDF(url, username, password) {
+    let pdfData;
 
+    try {
+        const response = await axios.get(url, {
+            auth: {
+                username: username,
+                password: password
+            },
+            responseType: 'arraybuffer', // this is important for receiving the pdf as a binary
+        });
 
+        pdfData = response.data;
+    } catch (error) {
+        throw error;
+    }
 
-axios.get('http://geschuetzt.bszet.de/s-lk-vw/Vertretungsplaene/vertretungsplan-bs-it.pdf', {
-    auth: {
-        username: 'bsz-et-2324',
-        password: 'schulleiter#23'
-    },
-    responseType: 'arraybuffer' // um die PDF-Datei als binären Datenstrom zu erhalten
-})
-.then(function (response) {
-    let pdfData = new Buffer.from(response.data).toString('base64');
-    let json = {
-        pdf: pdfData
-    };
-    
-})
-.catch((error) => {
-    console.error(error)
-});
+    return pdfData;
+}
 
-
+async function parsePDF(pdfData) {
+    try {
+        const data = await pdf(pdfData);
+        return data;
+    } catch (error) {
+        throw error;
+    }
+}
 
 
 
