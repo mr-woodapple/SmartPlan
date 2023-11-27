@@ -1,59 +1,4 @@
-/* ################ General stuff ################ */
-* {
-    font-family: 'stolzl-book';
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-main {
-    flex: 1;
-}
-
-
-/* ################ Navbar ################ */
-#nav {
-    color: #2d2d2d;
-}
-
-.navbar-brand #img {
-    background: none;
-}
-
-/* ################ Lesson component ################ */
-.lesson {
-    background-color: #e9ecef;
-}
-
-/* ################ Footer ################ */
-footer {
-    font-size: 70%;
-    font-family: 'stolzl-light';
-}
-
-footer a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ################ Cat Gif ################ */
-.rounded-box img {
-    width: 500px;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.rounded-box {
-    display: flex;
-    justify-content: center;
-}
-
-
-/* ################ Import Font ################ */
+/* ################ Font imports ################ */
 @font-face {
     font-family: 'stolzl-bold';
     src: url('/font/Stolzl-Bold.ttf') format('truetype');
@@ -87,6 +32,64 @@ footer a, a:hover, a:focus, a:active {
     src: url('/font/Stolzl-Regular.ttf') format('truetype');
     src: url('/font/Stolzl-Regular.woff') format('woff');
     src: url('/font/Stolzl-Regular.woff2') format('woff2');
+}
+
+
+/* ################ General stuff ################ */
+* {
+    font-family: 'stolzl-book';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* ################ Navbar ################ */
+#nav {
+    color: #2d2d2d;
+}
+
+.navbar-brand #img {
+    background: none;
+}
+
+
+/* ################ Cat Gif ################ */
+.rounded-box img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.rounded-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ################ Lesson component ################ */
+.lesson {
+    background-color: #e9ecef;
+}
+
+
+/* ################ Footer ################ */
+footer {
+    font-size: 70%;
+    font-family: 'stolzl-light';
+}
+
+footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 
