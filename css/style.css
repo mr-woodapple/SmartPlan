@@ -1,4 +1,128 @@
+/* ################ Font imports ################ */
+@font-face {
+    font-family: 'stolzl-bold';
+    src: url('/font/Stolzl-Bold.ttf') format('truetype');
+    src: url('/font/Stolzl-Bold.woff') format('woff');
+    src: url('/font/Stolzl-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-book';
+    src: url('/font/Stolzl-Book.ttf') format('truetype');
+    src: url('/font/Stolzl-Book.woff') format('woff');
+    src: url('/font/Stolzl-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-light';
+    src: url('/font/Stolzl-Light.ttf') format('truetype');
+    src: url('/font/Stolzl-Light.woff') format('woff');
+    src: url('/font/Stolzl-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-medium';
+    src: url('/font/Stolzl-Medium.ttf') format('truetype');
+    src: url('/font/Stolzl-Medium.woff') format('woff');
+    src: url('/font/Stolzl-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'stolzl-regular';
+    src: url('/font/Stolzl-Regular.ttf') format('truetype');
+    src: url('/font/Stolzl-Regular.woff') format('woff');
+    src: url('/font/Stolzl-Regular.woff2') format('woff2');
+}
+
+
+/* ################ General stuff ################ */
+* {
+    font-family: 'stolzl-book';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* ################ Navbar ################ */
+#nav {
+    color: #2d2d2d;
+}
+
+.navbar-brand #img {
+    background: none;
+}
+
+
+/* ################ Cat Gif ################ */
+.rounded-box img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.rounded-box {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* ################ Lesson component ################ */
 .lesson {
     background-color: #e9ecef;
 }
+
+
+/* ################ Footer ################ */
+footer {
+    font-size: 70%;
+    font-family: 'stolzl-light';
+}
+
+footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ################ (bad) darkmode from @etsde ################ */
+@media (prefers-color-scheme: dark) {
+
+    * {
+        background-color:               #2d2d2d;
+        --bs-body-color:                #e9ecef;
+        --bs-body-bg:                   var(--bs-black-rgb);
+        --bs-secondary-bg-rgb:          var(--bs-black-rgb);
+        --bs-navbar-brand-color:        var(--bs-white-rgb);
+        --bs-navbar-brand-hover-color:  var(--bs-white-rgb);
+
+    }
+
+    .container-fluid, .col-auto, .navbar-brand {
+        background-color: var(--bs-black-rgb);
+    } 
+
+    .col-auto {
+        align-items: center;
+    }
+    select.form-select {
+        border:                         1px rgb(60, 60, 60) solid;
+    }
+
+    .lesson {
+        background-color:               var(--bs-black-rgb);
+        border:                         1px solid #515151;
+        color:                          #e9ecef;
+    }
+}
+/* ################ DARKMODE END ################ */
+
+
