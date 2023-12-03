@@ -1,37 +1,37 @@
 /* ################ Font imports ################ */
 @font-face {
     font-family: 'stolzl-bold';
-    src: url('/font/Stolzl-Bold.ttf') format('truetype');
-    src: url('/font/Stolzl-Bold.woff') format('woff');
-    src: url('/font/Stolzl-Bold.woff2') format('woff2');
+    src: url('/static/font/Stolzl-Bold.ttf') format('truetype');
+    src: url('/static/font/Stolzl-Bold.woff') format('woff');
+    src: url('/static/font/Stolzl-Bold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'stolzl-book';
-    src: url('/font/Stolzl-Book.ttf') format('truetype');
-    src: url('/font/Stolzl-Book.woff') format('woff');
-    src: url('/font/Stolzl-Book.woff2') format('woff2');
+    src: url('/static/font/Stolzl-Book.ttf') format('truetype');
+    src: url('/static/font/Stolzl-Book.woff') format('woff');
+    src: url('/static/font/Stolzl-Book.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'stolzl-light';
-    src: url('/font/Stolzl-Light.ttf') format('truetype');
-    src: url('/font/Stolzl-Light.woff') format('woff');
-    src: url('/font/Stolzl-Light.woff2') format('woff2');
+    src: url('/static/font/Stolzl-Light.ttf') format('truetype');
+    src: url('/static/font/Stolzl-Light.woff') format('woff');
+    src: url('/static/font/Stolzl-Light.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'stolzl-medium';
-    src: url('/font/Stolzl-Medium.ttf') format('truetype');
-    src: url('/font/Stolzl-Medium.woff') format('woff');
-    src: url('/font/Stolzl-Medium.woff2') format('woff2');
+    src: url('/static/font/Stolzl-Medium.ttf') format('truetype');
+    src: url('/static/font/Stolzl-Medium.woff') format('woff');
+    src: url('/static/font/Stolzl-Medium.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'stolzl-regular';
-    src: url('/font/Stolzl-Regular.ttf') format('truetype');
-    src: url('/font/Stolzl-Regular.woff') format('woff');
-    src: url('/font/Stolzl-Regular.woff2') format('woff2');
+    src: url('/static/font/Stolzl-Regular.ttf') format('truetype');
+    src: url('/static/font/Stolzl-Regular.woff') format('woff');
+    src: url('/static/font/Stolzl-Regular.woff2') format('woff2');
 }
 
 

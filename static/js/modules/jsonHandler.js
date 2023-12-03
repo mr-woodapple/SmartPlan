@@ -8,7 +8,7 @@ export function loadJSON(selectedTimetable) {
     switch (selectedTimetable.value) {
         case "it-23-3-A":
             var request = new XMLHttpRequest();
-            request.open("GET", "../../timetables/C_IT23-3-A.json", false);
+            request.open("GET", "/static/timetables/C_IT23-3-A.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
@@ -16,7 +16,7 @@ export function loadJSON(selectedTimetable) {
 
         case "it-23-3-B":
             var request = new XMLHttpRequest();
-            request.open("GET", "../../timetables/C_IT23-3-B.json", false);
+            request.open("GET", "static/timetables/C_IT23-3-B.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
