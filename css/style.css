@@ -92,6 +92,9 @@ footer a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+.icon {
+    color: black;
+}
 
 /* ################ (bad) darkmode from @etsde ################ */
 @media (prefers-color-scheme: dark) {
@@ -121,6 +124,11 @@ footer a, a:hover, a:focus, a:active {
         background-color:               var(--bs-black-rgb);
         border:                         1px solid #515151;
         color:                          #e9ecef;
+    }
+    
+    .icon path {
+        fill: white;
+        color: black;
     }
 }
 /* ################ DARKMODE END ################ */
