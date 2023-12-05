@@ -93,7 +93,7 @@ footer a, a:hover, a:focus, a:active {
 }
 
 .icon {
-    color: black;
+    fill: black;
 }
 
 /* ################ (bad) darkmode from @etsde ################ */
