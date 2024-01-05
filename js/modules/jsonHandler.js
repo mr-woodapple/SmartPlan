@@ -22,6 +22,22 @@ export function loadJSON(selectedTimetable) {
 
             return timetable;
 
+        case "it-23-6-A":
+            var request = new XMLHttpRequest();
+            request.open("GET", "../../timetables/C_IT23-6-A.json", false);
+            request.send(null);
+            var timetable = JSON.parse(request.responseText);
+
+            return timetable;
+
+        case "it-23-6-B":
+            var request = new XMLHttpRequest();
+            request.open("GET", "../../timetables/C_IT23-6-B.json", false);
+            request.send(null);
+            var timetable = JSON.parse(request.responseText);
+
+            return timetable;
+
         default:
             console.log("Error, no matching timetable found.");
             break;
