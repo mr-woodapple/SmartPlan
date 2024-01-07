@@ -1,3 +1,7 @@
+07/01/23
+    - support for IT23/6
+    - beta: external times file
+
 23/11/23
     - better code quality
     - new folder structure
