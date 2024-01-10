@@ -1,35 +1,35 @@
 {   "0" : [],
 
-    "1" : [
-        {
-            "startTime" : "07:15",
-            "endTime" : "08:45",
-            "topic" : "IT-LF 1",
-            "teacher" : "Thierbach",
-            "room" : "B403"
-        },
-        {
-            "startTime" : "09:15",
-            "endTime" : "10:45",
-            "topic" : "IT-LF 5",
-            "teacher" : "Bardon",
-            "room" : "B312"
-        },
-        {
-            "startTime" : "11:00",
-            "endTime" : "12:30",
-            "topic" : "ENG",
-            "teacher" : "Pohle",
-            "room" : "B406"
-        },
-        {
-            "startTime" : "13:10",
-            "endTime" : "14:40",
-            "topic" : "SP",
-            "teacher" : "Reinhold",
-            "room" : "A500"
-        }
-    ],
+"1" : [
+    {
+        "startTime" : "07:15",
+        "endTime" : "08:45",
+        "topic" : "IT-LF 1",
+        "teacher" : "Thierbach",
+        "room" : "B403"
+    },
+    {
+        "startTime" : "09:15",
+        "endTime" : "10:45",
+        "topic" : "IT-LF 5",
+        "teacher" : "Bardon",
+        "room" : "B312"
+    },
+    {
+        "startTime" : "11:00",
+        "endTime" : "12:30",
+        "topic" : "ENG",
+        "teacher" : "Pohle",
+        "room" : "B406"
+    },
+    {
+        "startTime" : "13:10",
+        "endTime" : "14:40",
+        "topic" : "SP",
+        "teacher" : "Reinhold",
+        "room" : "A500"
+    }
+],
 
 "2" : [ 
     {
@@ -99,7 +99,7 @@
         "endTime" : "10:45",
         "topic" : "WI",
         "teacher" : "Kiel",
-        "room" : "B406"
+        "room" : "B408"
     },
     {
         "startTime" : "11:00",
@@ -140,7 +140,6 @@
         "room" : "B303"
     }
 ],
-
 
 "6" : []
 }
