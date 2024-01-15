@@ -44,15 +44,6 @@
     <meta property="twitter:description" content="ORGANIZING WITH EASE" />
     <meta property="twitter:image" itemprop="image" content="/sp.jpg" />
 
-    <style>
-        .red-line {
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: red;
-            top: 50%;
-        }
-    </style>
     
 </head>
 <body>
@@ -110,8 +101,7 @@
         </div>
 
         <!-- Block with the data for that day, iterate over entries for the given weekday, add as many lessons as there are -->
-        <div class="lesson-wrapper mt-3 timetable">
-            <div class="red-line" id="redLine"></div>
+        <div class="lesson-wrapper mt-3">
             <div class="lessons">
                 <!-- JS generated lesson content will replace the following div -->
                 <div class="row justify-content-center align-items-center">
@@ -141,40 +131,6 @@
     <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script>
-        function updateRedLine() {
-            const redLine = document.getElementById('redLine');
-            const currentTime = new Date();
-            
-            // Set the time zone to Germany
-            const germanyTimeZone = 'Europe/Berlin';
-            const options = { timeZone: germanyTimeZone };
-
-            // Get the current time in the specified time zone
-            const germanyTime = currentTime.toLocaleString('en-US', options);
-
-            // Extract hours and minutes from the Germany time
-            const [hours, minutes] = germanyTime.split(/:| /).map(Number);
-
-            // Adjust for daylight saving time (summer time)
-            const isSummerTime = currentTime.getTimezoneOffset() !== new Date(germanyTime).getTimezoneOffset();
-            const offset = isSummerTime ? 2 : 1; // Germany is either UTC+1 (winter) or UTC+2 (summer)
-
-            const totalMinutes = (hours + offset) * 60 + minutes;
-
-            // Calculate the position of the red line based on the current time and the timetable width
-            const timetableWidth = document.querySelector('.timetable').offsetWidth;
-            const position = (totalMinutes / (24 * 60)) * timetableWidth;
-
-            redLine.style.left = position + 'px';
-        }
-
-        // Update the red line every minute
-        setInterval(updateRedLine, 60000);
-
-        // Initial update when the page loads
-        updateRedLine();
-    </script>
 
 </body>
 </html>
