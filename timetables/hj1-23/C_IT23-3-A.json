@@ -4,30 +4,30 @@
     {
         "startTime" : "07:15",
         "endTime" : "08:45",
-        "topic" : "---",
-        "teacher" : "",
-        "room" : ""
+        "topic" : "IT-LF 1",
+        "teacher" : "Thierbach",
+        "room" : "B403"
     },
     {
         "startTime" : "09:15",
         "endTime" : "10:45",
-        "topic" : "SPO",
-        "teacher" : "Reinhold",
-        "room" : "A500"
+        "topic" : "IT-LF 2",
+        "teacher" : "Arndt",
+        "room" : "B310"
     },
     {
         "startTime" : "11:00",
         "endTime" : "12:30",
-        "topic" : "LF5",
-        "teacher" : "Bardon",
-        "room" : "B303"
+        "topic" : "ENG",
+        "teacher" : "Pohle",
+        "room" : "B406"
     },
     {
         "startTime" : "13:10",
         "endTime" : "14:40",
-        "topic" : "WIR",
-        "teacher" : "Dornig",
-        "room" : "B404"
+        "topic" : "SP",
+        "teacher" : "Reinhold",
+        "room" : "A500"
     }
 ],
 
@@ -35,23 +35,23 @@
     {
         "startTime" : "07:15",
         "endTime" : "08:45",
-        "topic" : "LF4",
-        "teacher" : "Wittkopf",
+        "topic" : "IT-LF 2",
+        "teacher" : "Kiel",
         "room" : "B303"
     },
     {
         "startTime" : "09:15",
         "endTime" : "10:45",
-        "topic" : "WIR",
-        "teacher" : "Dornig",
+        "topic" : "ENG",
+        "teacher" : "Pohle",
         "room" : "B406"
     },
     {
         "startTime" : "11:00",
         "endTime" : "12:30",
-        "topic" : "LF3",
-        "teacher" : "Poppe",
-        "room" : "B411"
+        "topic" : "IT-LF 5",
+        "teacher" : "Bardon",
+        "room" : "B409"
     }
 ],
 
@@ -59,30 +59,30 @@
     {
         "startTime" : "07:15",
         "endTime" : "08:45",
-        "topic" : "LF1",
-        "teacher" : "Thierbach",
-        "room" : "B303"
+        "topic" : "IT-LF 3",
+        "teacher" : "Hempel",
+        "room" : "B403"
     },
     {
         "startTime" : "09:15",
         "endTime" : "10:45",
-        "topic" : "LF2",
-        "teacher" : "Arndt",
-        "room" : "B310"
+        "topic" : "IT-LF 5",
+        "teacher" : "Münch",
+        "room" : "A303"
     },
     {
         "startTime" : "11:00",
         "endTime" : "12:30",
-        "topic" : "LF5",
-        "teacher" : "Münch",
-        "room" : "B312"
+        "topic" : "IT-LF 3",
+        "teacher" : "Poppe",
+        "room" : "B411"
     },
     {
         "startTime" : "13:10",
         "endTime" : "14:40",
-        "topic" : "ENG",
-        "teacher" : "Pohle",
-        "room" : "B406"
+        "topic" : "DEU",
+        "teacher" : "Zürpel",
+        "room" : "B208"
     }
 ],
 
@@ -90,30 +90,30 @@
     {
         "startTime" : "07:15",
         "endTime" : "08:45",
-        "topic" : "LF4",
-        "teacher" : "Wittkopf",
+        "topic" : "IT-LF 2",
+        "teacher" : "Kiel",
         "room" : "B303"
     },
     {
         "startTime" : "09:15",
         "endTime" : "10:45",
-        "topic" : "LF5",
-        "teacher" : "Bardon",
-        "room" : "B312"
+        "topic" : "WI",
+        "teacher" : "Kiel",
+        "room" : "B408"
     },
     {
         "startTime" : "11:00",
         "endTime" : "12:30",
-        "topic" : "LF2",
-        "teacher" : "Kiel",
-        "room" : "B403"
+        "topic" : "IT-LF 5",
+        "teacher" : "Bardon",
+        "room" : "B303"
     },
     {
         "startTime" : "13:10",
         "endTime" : "14:40",
         "topic" : "DEU",
         "teacher" : "Zürpel",
-        "room" : "B103 / B208"
+        "room" : "B111 / B403"
     }
 ],
 
@@ -121,30 +121,23 @@
     {
         "startTime" : "07:15",
         "endTime" : "08:45",
-        "topic" : "---",
-        "teacher" : "",
-        "room" : ""
+        "topic" : "IT-LF 1",
+        "teacher" : "Thierbach",
+        "room" : "B303"
     },
     {
         "startTime" : "09:15",
         "endTime" : "10:45",
-        "topic" : "ENG",
-        "teacher" : "Pohle",
-        "room" : "B406"
+        "topic" : "GK",
+        "teacher" : "Fernitz",
+        "room" : "B208"
     },
     {
         "startTime" : "11:00",
         "endTime" : "12:30",
-        "topic" : "GMK",
-        "teacher" : "Fernitz",
-        "room" : "B204"
-    },
-    {
-        "startTime" : "13:10",
-        "endTime" : "14:40",
-        "topic" : "LF3",
-        "teacher" : "Hempel",
-        "room" : "B403"
+        "topic" : "IT-LF 4",
+        "teacher" : "Wittkopf",
+        "room" : "B303"
     }
 ],
 
