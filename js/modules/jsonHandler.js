@@ -5,7 +5,7 @@
 export function loadJSON(selectedTimetable) {
 
     // ideally automate this to get all files in the "timetables" folder and check if a matchin file is present
-    switch (selectedTimetable.value) {
+    switch (selectedTimetable) {
         case "it-23-3-A":
             var request = new XMLHttpRequest();
             request.open("GET", "../../timetables/C_IT23-3-A.json", false);

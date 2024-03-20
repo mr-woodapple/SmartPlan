@@ -12,6 +12,7 @@ const nextDay = document.querySelector(".next-day")
 const prevDay = document.querySelector(".prev-day")
 
 // ADD EVENT LISTENERS
+addEventListener("load", initializeApp);
 timetableSelected.addEventListener("change", onTimetableSelected);
 nextDay.addEventListener("click", loadNextDay)
 prevDay.addEventListener("click", loadPrevDay)
@@ -20,11 +21,25 @@ prevDay.addEventListener("click", loadPrevDay)
 var selectedWeekdayNumeric = dateHandler.getWeekDay();
 var timetable;
 
+/**
+ * 
+ */
+function initializeApp() {
+    // Check if we have a value in storage & if so load timetable
+    if (localStorage.getItem('selectedTimetable') != null) {
+        timetableSelected.value = localStorage.getItem('selectedTimetable');
+        onTimetableSelected();
+    }
+}
 
 function onTimetableSelected() {
     // Parse JSON, load selected timetable
-    timetable = jsonHandler.loadJSON(timetableSelected)
+    timetable = jsonHandler.loadJSON(timetableSelected.value);
 
+    // Save the selected timetable to localStorage
+    localStorage.setItem('selectedTimetable', timetableSelected.value);
+
+    // Update the HTML
     updateTimetable();
 }
 
@@ -48,7 +63,9 @@ function loadNextDay() {
     updateTimetable();
 }
 
-
+/**
+ * 
+ */
 function loadPrevDay() {
     if (selectedWeekdayNumeric == 0) {
         selectedWeekdayNumeric = 6;
