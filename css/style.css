@@ -2,3 +2,7 @@
 .lesson {
     background-color: #e9ecef;
 }
+
+.debug {
+    border: 2px dashed red;
+}
