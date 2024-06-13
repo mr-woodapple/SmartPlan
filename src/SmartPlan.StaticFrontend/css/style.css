@@ -1,3 +1,15 @@
+/* ################ Navbar component ################ */
+.navbar {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+
 /* ################ Lesson component ################ */
 .lesson {
     background-color: #e9ecef;
