@@ -8,7 +8,6 @@ export function renderLessonHTML(lessons) {
     var numberOfLessons = Object.keys(lessons).length;
 
     if (numberOfLessons == 0) {
-        // get lo
         // generate info text that no data is available for that day
         const infoText = document.createElement("p")
         infoText.classList.add('row', 'justify-content-center', 'm-3', 'align-items-center', 'lessons')
