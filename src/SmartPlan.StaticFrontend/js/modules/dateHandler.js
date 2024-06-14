@@ -1,9 +1,11 @@
-// Created 2023-11-18
-
-
-// Returns human readable name for the argument day (int)
+/**
+ * Returns human readable name for the argument day (int)
+ * 
+ * @param {*} day Number of the day (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+ * @returns String of the current day.
+ */
 export function getReadableWeekday(day) {
-    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const weekdays = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
     return weekdays[day];
 }
