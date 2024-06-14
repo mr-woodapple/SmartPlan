@@ -2,6 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
+
 ## Update 2024-06-14
 
 - Reworked the design
@@ -12,9 +13,11 @@ All notable changes to this project will be documented in this file.
 
 - Updated timetables
 
+
 ## Update 2024-01-10
 
 - Added timetables for 23-6 class
+
 
 ## Release 2023-11-18
 
