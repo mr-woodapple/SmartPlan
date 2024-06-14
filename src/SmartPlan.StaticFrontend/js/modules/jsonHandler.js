@@ -9,7 +9,7 @@ export function loadJSON(selectedTimetable) {
     switch (selectedTimetable) {
         case "C_IT 23-3 A":
             var request = new XMLHttpRequest();
-            request.open("GET", "./../SmartPlan.StaticFrontend/timetables/C_IT23-3-A.json", false);
+            request.open("GET", "./../timetables/C_IT23-3-A.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
@@ -17,7 +17,7 @@ export function loadJSON(selectedTimetable) {
 
         case "C_IT 23-3 B":
             var request = new XMLHttpRequest();
-            request.open("GET", "./../SmartPlan.StaticFrontend/timetables/C_IT23-3-B.json", false);
+            request.open("GET", "./../timetables/C_IT23-3-B.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
@@ -25,7 +25,7 @@ export function loadJSON(selectedTimetable) {
 
         case "C_IT 23-6 A":
             var request = new XMLHttpRequest();
-            request.open("GET", "./../SmartPlan.StaticFrontend/timetables/C_IT23-6-A.json", false);
+            request.open("GET", "./../timetables/C_IT23-6-A.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
@@ -33,7 +33,7 @@ export function loadJSON(selectedTimetable) {
 
         case "C_IT 23-6 B":
             var request = new XMLHttpRequest();
-            request.open("GET", "./../SmartPlan.StaticFrontend/timetables/C_IT23-6-B.json", false);
+            request.open("GET", "./../timetables/C_IT23-6-B.json", false);
             request.send(null);
             var timetable = JSON.parse(request.responseText);
 
