@@ -84,7 +84,7 @@ a, p, h1, h2, h3, h4, h5, h6 {
 .nothing-selected-notice {
     color: var(--textSecondary) !important;
     background-color: var(--bgLesson);
-    border-radius: 20px;
+    border-radius: 0.375rem;
 }
 .nothing-selected-notice svg {
     fill: var(--textSecondary);
