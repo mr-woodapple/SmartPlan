@@ -11,7 +11,7 @@ export function renderLessonHTML(lessons) {
         // generate info text that no data is available for that day
         const infoText = document.createElement("p")
         infoText.classList.add('row', 'justify-content-center', 'm-3', 'align-items-center', 'lessons')
-        infoText.textContent = "No lessons for today. Yay! :)"
+        infoText.textContent = "Heute keine Stunden. Yay! 🎉"
 
         // get the location and add it
         document.querySelector(".lessons").replaceWith(infoText);
