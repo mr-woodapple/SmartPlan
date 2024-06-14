@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-    
-    <!-- Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="1831x1831" href="/smartplan.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/smartplan.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/fsmartplan.png">
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="1831x1831" href="./smartplan.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./smartplan.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./smartplan.png">
     <meta name="msapplication-TileColor" content="#e8ecef">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,59 +33,79 @@
     <meta property="og:url" content="https://bszet.me/" />
     <meta property="og:title" content="SMART PLAN - BSZET" />
     <meta property="og:description" content="ORGANIZING WITH EASE" />
-    <meta property="og:image" itemprop="image" content="/sp.jpg" />
+    <meta property="og:image" itemprop="image" content="./sp.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://bszet.me/" />
     <meta property="twitter:title" content="SMART PLAN - BSZET" />
     <meta property="twitter:description" content="ORGANIZING WITH EASE" />
-    <meta property="twitter:image" itemprop="image" content="/sp.jpg" />
+    <meta property="twitter:image" itemprop="image" content="./sp.jpg" />
 </head>
-<body>
-    
+
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Nav -->
-    <nav class="navbar bg-body-secondary py-3">
+    <nav class="navbar py-3">
         <div class="container-fluid">
             <a class="navbar-brand fs-3 fw-medium" href="#">
-                <img src="smartplan.png" width="40px"/>
+                <img class="nav-logo" src="smartplan.png" width="40px" />
                 &nbsp; SmartPlan
             </a>
-            
+
             <!-- Dropdown for available classes -->
-            <!-- TODO: Update this to get the available options from what's in the folder "timetables" -->
-            <div class="col-auto">
-                <select class="form-select form-select select-timetable" aria-label="Dropdown class selector">
-                    <option selected disabled>Select your class</option>
-                    <hr />
-                    <optgroup label="C_IT 23/3">
-                        <option value="it-23-3-A">C_IT 23/3 A</option>
-                        <option value="it-23-3-B">C_IT 23/3 B</option>
-                    </optgroup>
-                    <optgroup label="C_IT 23/6">
-                        <option value="it-23-6-A">C_IT 23/6 A</option>
-                        <option value="it-23-6-B">C_IT 23/6 B</option>
-                    </optgroup>
-                    
-                </select>
+            <div class="dropdown">
+                <button class="btn btn-outline classes-dropdown" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="timetable-name">Select your class</span>
+                    <span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            class="dropdown-arrow">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end classes-dropdown-menu">
+                    <li>
+                        <h6 class="dropdown-header">Select your class:</h6>
+                    </li>
+                    <li><a class="dropdown-item" value="C_IT 23-3 A" onclick="selectTimetable(this)">C_IT 23/3 A</a>
+                    </li>
+                    <li><a class="dropdown-item" value="C_IT 23-3 B" onclick="selectTimetable(this)">C_IT 23/3 B</a>
+                    </li>
+                    <li><a class="dropdown-item" value="C_IT 23-6 A" onclick="selectTimetable(this)">C_IT 23/6 A</a>
+                    </li>
+                    <li><a class="dropdown-item" value="C_IT 23-6 B" onclick="selectTimetable(this)">C_IT 23/6 B</a>
+                    </li>
+                </ul>
             </div>
-            
         </div>
     </nav>
 
-
-    <div class="container-fluid px-4">
+    <div class="container-fluid px-4 wrapper">
         <!-- Day of week, left & right buttons to go back / forward -->
-        <div class="row justify-content-between mt-3">
-            <div class="col-auto p-0">
-                <button type="button" class="btn btn-primary prev-day"> Prev </button>
+        <div class="row justify-content-between align-items-center mt-4">
+            <div class="col-auto py-2 px-3 button-day-switcher-wrapper">
+                <button type="button" class="prev-day">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#5f6368">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                    Zurück
+                </button>
             </div>
             <div class="col-auto">
-                <h2 class="weekday"> Welcome! </h2>
+                <h2 class="weekday"> Hey du! 😊 </h2>
             </div>
-            <div class="col-auto p-0">
-                <button type="button" class="btn btn-primary next-day"> Next </button>
+            <div class="col-auto py-2 px-3 button-day-switcher-wrapper">
+                <button type="button" class="next-day">
+                    Vorwärts
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#5f6368">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -91,17 +113,32 @@
         <div class="lesson-wrapper mt-3">
             <div class="lessons">
                 <!-- JS generated lesson content will replace the following div -->
-                <div class="row justify-content-center align-items-center"> 
-                    Select a timetable from the top right to continue.
+                <div class="row justify-content-center">
+                    <div class="col-auto p-3 mt-3 nothing-selected-notice">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                            <path d="M480-280q17 0 28.5-11.5T520-320v-160q0-17-11.5-28.5T480-520q-17 0-28.5 11.5T440-480v160q0 17 11.5 28.5T480-280Zm0-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        </svg>
+                        &nbsp; Wähle oben rechts einen Stundenplan aus um fortzufahren.
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-    
-    <script type="module" src="js/app.js"></script>
-    <!-- Bootstrap scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <!-- Changelog section -->
+    <div class="text-center changelog-section mt-auto mb-3">
+        <a class="changelog-link" href="CHANGELOG.md"> Changelog </a>
+        | Mit ♥️ in Dresden entwickelt.
+    </div>
+
+    <script type="module">
+        import * as app from './js/app.js';
+        window.selectTimetable = app.selectedTimetableTranslator;
+    </script>
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

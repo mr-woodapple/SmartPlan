@@ -1,8 +1,128 @@
-/* ################ Lesson component ################ */
-.lesson {
-    background-color: #e9ecef;
+/* Light mode colors */
+@media (prefers-color-scheme: light) {
+	:root {
+        --textPrimary: rgb(0, 0, 0);
+        --textSecondary: rgb(108, 117, 125);
+        --bgGeneral: white;
+        --bgLesson: rgb(207, 207, 207, 0.2);
+        --outlineLogo: 1px solid grey;
+        --shadowNavbar: 0 5px 5px rgba(0, 0, 0, .1);
+        --borderNavbar: 1px solid rgb(207, 207, 207);
+	}
 }
 
+/* Dark mode colors  */
+@media (prefers-color-scheme: dark) {
+	:root {
+        --textPrimary: rgb(255, 255, 255);
+        --textSecondary: rgb(255, 255, 255, .5);
+        --bgGeneral: rgb(23, 30, 39);
+        --bgLesson: rgb(33, 41, 50);
+        --outlineLogo: 1px solid grey;
+        --shadowNavbar: 0 5px 5px rgba(0, 0, 0, .25);
+        --borderNavbar: 1px solid rgb(47, 56, 67);
+	}
+}
+
+
+/* ################ General styling ################ */
+body {
+    background-color: var(--bgGeneral) !important;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    color: var(--textPrimary) !important;
+}
+
+
+/* ################ Navbar component ################ */
+.navbar {
+    border-bottom: var(--borderNavbar);
+    box-shadow: var(--shadowNavbar);
+}
+
+.nav-logo {
+    border: var(--outlineLogo);
+    border-radius: 10px;
+}
+
+/* Dropdown related stuff */
+.classes-dropdown, .classes-dropdown-menu {
+    color: var(--textPrimary) !important;
+    background-color: var(--bgGeneral) !important;
+    border: var(--borderNavbar) !important;
+}
+
+.classes-dropdown-menu a.dropdown-item:hover {
+    background-color: var(--bgLesson) !important;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    fill: var(--textPrimary);
+}
+
+
+/* ################ Navigating days component ################ */
+.next-day, .prev-day {
+    all: unset;
+}
+
+.button-day-switcher-wrapper {
+    transition: 0.2s ease-in-out;
+}
+.button-day-switcher-wrapper:hover {
+    background-color: var(--bgLesson);
+    border-radius: 20px;
+}
+
+
+/* ################ No timetable selected notice ################ */
+.nothing-selected-notice {
+    color: var(--textSecondary) !important;
+    background-color: var(--bgLesson);
+    border-radius: 20px;
+}
+.nothing-selected-notice svg {
+    fill: var(--textSecondary);
+}
+
+
+/* ################ Lesson component ################ */
+.lesson {
+    background-color: var(--bgLesson);
+}
+
+
+/* ################ Changelog section ################ */
+.changelog-section, .changelog-section a {
+    color: var(--textSecondary) !important;
+    text-decoration: none !important;
+}
+
+.changelog-link {
+    transition: 0.2s ease-in-out;
+    position: relative;
+}
+.changelog-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: .05em;
+    background-color: var(--textSecondary);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  .changelog-link:hover::after,
+  .changelog-link:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+
+  
+/* Only used for development */
 .debug {
     border: 2px dashed red;
 }
